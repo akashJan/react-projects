@@ -1,14 +1,16 @@
 import React from "react";
 
-const Cell = ({ filled, onClick }) => {
+const Cell = ({ filled, onClick, isDisabled, label }) => {
   return (
-    <div>
-      <button
-        type="button"
-        onClick={onClick}
-        className={filled ? "cell cell-activated" : "cell"}
-      />
-    </div>
+    <button
+      type="button"
+      aria-label={label}
+      disabled={isDisabled}
+      onClick={onClick}
+      className={`border border-black h-0 pb-[100%] w-full ${
+        filled ? "bg-green-500" : "bg-transparent"
+      }`}
+    />
   );
 };
 

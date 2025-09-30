@@ -8,10 +8,12 @@ import React from "react";
 // import DiscountedAmountCal from "./components/DiscountAmoutCal/DiscountedAmountCal";
 // import ProgressBar from "./components/ProgressBar/ProgressBar.js";
 // import GridLight from "./components/GridLights/GridLights.jsx";
-
-import CurrencyConvertor from "./components/CurrencyConvertor/CurrencyConvertor";
+// import CurrencyConvertor from "./components/CurrencyConvertor/CurrencyConvertor";
+// import LikeButton from "./components/LikeButton/LikeButton.jsx";
+import DarkLightToggle from "./components/DarkLightMode/DarkLightToggle";
 
 const App = () => {
+  // Use this for Progress Bar
   // const [value, setValue] = useState(0);
   // const [success, setSuccess] = useState(false);
   // useEffect(() => {
@@ -31,12 +33,15 @@ const App = () => {
         <ProgressBar value={value} onComplete={() => setSuccess(true)} />
         <span>{success ? "Complete" : "Loading"}</span>
       </div> */}
-      {/* <GridLight /> */}
-      <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center">
+
+      {/* <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center">
         <div className="container">
           <CurrencyConvertor />
         </div>
-      </div>
+      </div> */}
+      {/* <GridLight /> */}
+      {/* <LikeButton /> */}
+      <DarkLightToggle />
     </>
   );
 };
