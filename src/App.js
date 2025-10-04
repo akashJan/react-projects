@@ -10,7 +10,8 @@ import React from "react";
 // import GridLight from "./components/GridLights/GridLights.jsx";
 // import CurrencyConvertor from "./components/CurrencyConvertor/CurrencyConvertor";
 // import LikeButton from "./components/LikeButton/LikeButton.jsx";
-import DarkLightToggle from "./components/DarkLightMode/DarkLightToggle";
+// import DarkLightToggle from "./components/DarkLightMode/DarkLightToggle";
+import MemoryGame from "./components/MemoryGame/MemoryGame";
 
 const App = () => {
   // Use this for Progress Bar
@@ -41,7 +42,8 @@ const App = () => {
       </div> */}
       {/* <GridLight /> */}
       {/* <LikeButton /> */}
-      <DarkLightToggle />
+      {/* <DarkLightToggle /> */}
+      <MemoryGame />
     </>
   );
 };
